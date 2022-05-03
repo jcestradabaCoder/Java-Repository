@@ -1,0 +1,59 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Spring Boot
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- Es una herramienta para poder trabajar de forma mas productiva el framework de Spring.
+- El nucleo de Spring Boot es Spring Framework.
+
+- Spring Tools 4:
+https://spring.io/tools
+
+- Spring initializr:
+https://start.spring.io/
+
+- Creación de proyectos desde el IDE:
+File -> New -> Spring Started Project
+
+- Importar proyecto:
+File -> Import -> Maven -> Existing Maven Projects
+
+- Dependencia basica para poder trabajar con un proyecto en Spring Boot:
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter</artifactId>
+</dependency>
+
+- Dependencia por defecto para realizar pruebas unitarias:
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-test</artifactId>
+	<scope>test</scope>
+</dependency>
+
+- Agregamos la dependencia spring-boot-starter-web para trabajar con Spring MVC, API REST, Servicios REST:
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+
+- Podemos cambiar el puerto en el que se ejecuta tomcat entre otras propiedades en su archivo application.properties:
+application.properties:
+server.port = 9090
+
+- Se agrega la dependencia spring-boot-devtools, esta nos permite la compilación automatica, sin tener que estar guardando cambios y compilar manualmente:
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-devtools</artifactId>
+	<scope>runtime</scope>
+	<optional>true</optional>
+</dependency>
+
+- En Spring Boot es posible realizar aplicaciones de tipo consola.
+
+- Servicios REST (Representational State Transfer):
+* REST es un estilo (conjunto de principios) de arquitectura de software.
+* Existen servicios REST que son componentes de software orientados a esta arquitectura.
+* Mediante estos principios podremos compartir mediante el Protocolo HTTP, respuestas bajo cualquier notación (XML, JSON, etc.).
+
+- Manual de despliegue en Heroku:
+https://drive.google.com/drive/folders/1M1S7ufksODCavMSwkkU4Iije9w5SUWOX?usp=sharing
